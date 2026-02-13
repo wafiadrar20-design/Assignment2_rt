@@ -30,15 +30,19 @@ Objectives
 2.1 Packages
 
 assignment2_rt
+
 Custom interfaces (messages and services):
 	•	msg/ObstacleInfo.msg
 	•	srv/SetThreshold.srv
 	•	srv/GetAvgVel.srv
 
 safe_teleop
+
 Core control and safety nodes:
+
 	•	teleop_node
 Publishes user commands to /cmd_vel_raw.
+
 	•	safety_node
 	•	Subscribes to /scan and /cmd_vel_raw.
 	•	Applies safety logic.
@@ -71,14 +75,19 @@ Raw velocity commands from user input.
 ⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻
 
 4. Services
-	•	/set_threshold — assignment2_rt/srv/SetThreshold
+
+       •	/set_threshold — assignment2_rt/srv/SetThreshold
+
 Dynamically changes the safety distance during runtime.
-	•	/get_last_velocity — assignment2_rt/srv/GetAvgVel
+
+       •	/get_last_velocity — assignment2_rt/srv/GetAvgVel
+	
 Returns the average of the last five received raw velocity commands.
 
 ⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻
 
 5. Prerequisites
+   
 	•	ROS 2 Jazzy
 	•	Gazebo simulator
 	•	ROS–Gazebo bridge (provided in the course simulation environment)
