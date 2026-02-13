@@ -3,7 +3,9 @@ ROS 2 Safe Teleoperation (Assignment 2)
 Author: (Amri Abdelouafi)
 
 Student ID: (7708121)
+
 ROS 2 Distro: Jazzy
+
 Date: (01-02-26)
 
 ⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻
@@ -15,6 +17,7 @@ This project implements a Safe Teleoperation System for a mobile robot in simula
 The user sends raw motion commands via /cmd_vel_raw. A dedicated safety node processes LaserScan data from /scan, evaluates potential collision risks, and determines what command is safe to forward to the robot via /cmd_vel.
 
 Objectives
+
 	•	Enable manual robot control.
 	•	Prevent collisions:
 	•	If an obstacle is detected within a safety threshold, forward motion is blocked.
