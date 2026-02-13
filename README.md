@@ -54,6 +54,7 @@ Publishes user commands to /cmd_vel_raw.
 3. Topics
 
 3.1 Published Topics
+
 	•	/cmd_vel_raw — geometry_msgs/Twist
 Raw user velocity commands (published by teleop_node).
 	•	/cmd_vel — geometry_msgs/Twist
